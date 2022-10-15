@@ -12,7 +12,7 @@
         document.removeEventListener("click", o); // When widget is closed nothing can be sent anyway
         console.log("widget removed");
     };
-    var o = function(e) { // On widget send or something
+    var o = function(e) { // On widget click something
         if ("span" == e.target.nodeName.toLowerCase()) {
             if (e.target.parentElement.className.includes("well-path-widget-link-wrap")) {
                 console.log("cta clicked");
